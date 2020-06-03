@@ -1,6 +1,7 @@
 # stock_split_finder
 Integrates data from two csv files for quantitative analysis purposes
 
+
 --- Description ---
 
 To analyze time series data for stock prices over time, you need to adjust historical prices for stock splits, if any. 
