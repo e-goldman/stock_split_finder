@@ -8,7 +8,7 @@ To analyze time series data for stock prices over time, you need to adjust histo
 This program can read a file containing a history of stock splits for multiple companies and constructs a dictionary of the 
 essential information. 
 
-Next it will lines from a file containing closing stock prices by date for any number of companies, locate the correct 
+Next it will read lines from a file containing closing stock prices by date for any number of companies, locate the correct 
 stock split ratio in the dictionary, if any, and write a new file with all of the information from the old prices file 
 plus the splits. If no splits are found, a line gets a split ratio of 1.
 
