@@ -5,7 +5,7 @@ Integrates data from two csv files for quantitative analysis
 --- Description ---
 
 To analyze time series data for stock prices over time, you need to adjust historical prices for stock splits, if any. 
-This program can read a file containing a history of stock splits for multiple companies and constructs a dictionary of the 
+This program can read a file containing a history of stock splits for multiple companies and constructs a hash table of the 
 essential information. 
 
 Next it will read lines from a file containing closing stock prices by date for any number of companies, locate the correct 
@@ -32,3 +32,6 @@ plus the splits. If no splits are found, a line gets a split ratio of 1.
 For the sake of this exercise, the program assumes complete, ordered files. If I'm able to revisit this later, I'd like 
 to expand it to accept files that aren't so nice and tidy and sort them first.
 
+I also would like to refactor it to manage time complexity better. It runs fine thanks to the limitation that splits.csv
+must fit in memory and the incredible performance of Python dictionaries, but if I have assessed it correctly, I believe
+it's not in linear time because I used nested loops. 
