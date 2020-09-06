@@ -33,5 +33,5 @@ For the sake of this exercise, the program assumes complete, ordered files. If I
 to expand it to accept files that aren't so nice and tidy and sort them first.
 
 I also would like to refactor it to manage time complexity better. It runs fine thanks to the limitation that splits.csv
-must fit in memory and the incredible performance of Python dictionaries, but if I have assessed it correctly, I believe
-it's not in linear time because I used nested loops. 
+must fit in memory and the incredible performance of Python dictionaries, but it's not in linear time because I used nested loops.
+Performance could be quite poor on a much larger dataset.
